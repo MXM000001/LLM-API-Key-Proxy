@@ -1,0 +1,9 @@
+[model_providers.nvidia-nim]
+name = "NVIDIA NIM"
+base_url = "http://127.0.0.1:5000"
+env_key = "NVIDIA_API_KEY"
+wire_api = "responses"
+
+[shell_environment_policy]
+inherit = "all"
+set = { NVIDIA_API_KEY = "anything" }
