@@ -21,10 +21,10 @@ if exist "%~dp0.env_litellm" (
     for /f "usebackq eol=# delims=" %%a in ("%~dp0.env_litellm") do set "%%a"
 )
 
-if defined NVIDIA_NIM_API_KEY (
-    echo [OK] API key loaded
+if defined NVIDIA_NIM_API_KEY_1 (
+    echo [OK] API keys loaded
 ) else (
-    echo [ERROR] NVIDIA_NIM_API_KEY not found
+    echo [ERROR] NVIDIA_NIM_API_KEY_1 not found in .env_litellm
     pause
     exit /b 1
 )
