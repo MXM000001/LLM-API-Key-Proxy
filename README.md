@@ -155,4 +155,18 @@ git push -u origin master
 ## 备注 / Notes
 
 - **加 Key**：在 `.env_litellm` 里继续加 `_3`、`_4`...，重新跑一次 `update_models.bat` 即可生效
+
+
+关于添加新的API KEY
+方案一：全新启动（推荐）
+1. 修改 .env_litellm（加 key）
+2. 执行 update_models.bat（生成新 config）
+3. 启动 start_litellm.bat
+
+方案二：运行中更新
+1. 修改 .env_litellm
+2. 执行 stop_litellm.bat（停止服务）
+3. 执行 update_models.bat（生成新 config）
+4. 启动 start_litellm.bat
+
 - **同步模型**：定期跑 `update_models.bat`，保持模型列表和 NVIDIA NIM 最新状态一致
