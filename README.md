@@ -18,6 +18,7 @@ LLM-API-Key-Proxy/
 ├── start_litellm.bat         # 启动代理
 ├── stop_litellm.bat          # 停止代理并释放端口
 ├── free_port.ps1             # 端口卡住时强制释放
+├── flatten_namespace_tools.py# 客户端层兼容性补丁
 └── config.toml               # Codex CLI 配置
 ```
 
